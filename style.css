@@ -564,14 +564,14 @@ QUALITY WORK ↓
 
 .quality__grid {
     transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
-    width: 8opx;
+    width: 80px;
     height: 80px;
     position: absolute;
     right: 0px;
     bottom: 0px;
     fill: rgb(100, 21, 255);
     --tw-text-opacity: 1;
-    color: rgb(100, 21, 255); var(--tw-text-opacity);
+    color: rgb(100, 21, 255);
     z-index: 0;
     display: block;
 }
@@ -592,6 +592,72 @@ STEPS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.steps__img--wrapper {
+    display:flex;
+    position:relative;
+}
+
+.steps__img--wrapper,
+.steps__description {
+    width: 50%;
+}
+
+.steps__img {
+    z-index: 2;
+}
+
+.steps__description {
+    padding: 32px 0;
+    padding-left: 64px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.steps__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.steps__grid {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    opacity: 0.8;
+    z-index: -10;
+    color: rgb(100, 21, 255); /* current Colorwill inherit this */
+    fill: currentColor;
 }
 
 
